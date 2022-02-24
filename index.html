@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="main">
+        <div class="header">
+            <h1 class="headtext">Weight Converter</h1>
+        </div>
+    <div class="container"> 
+    
+    <div class="textpart">
+        <p class="para">Type a value in any of the fields to convert between weight measurements:</p>
+    </div>
+    <div class="bottom">
+        <div class="weights pound"> 
+            <label for="poun" class="weight_text">Pounds</label>
+            <input id="poun" onkeyup="checkPound(this.value)" type="number" placeholder="0" maxlength="6">
+        </div>
+        <div class="weights kilogram">
+            <label for="kilo" class="weight_text">Kilograms</label>
+            <input id="kilo" onkeyup="checkKilogram(this.value)" type="number" placeholder="0">
+        </div>
+        <div class="weights ounce">
+            <label for="oun" class="weight_text">Ounces</label>
+            <input id="oun" onkeyup="checkOunce(this.value)" type="number" placeholder="0">
+        </div>
+        <div class="weights gram">
+            <label for="grm" class="weight_text">Grams</label>
+            <input id="grm" onkeyup="checkGram(this.value)" type="number" placeholder="0">
+        </div>
+        <div class="weights stone">
+            <label for="stn" class="weight_text">Stones</label>
+            <input id="stn" onkeyup="checkStone(this.value)" type="number" placeholder="0">
+        </div>
+   
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
